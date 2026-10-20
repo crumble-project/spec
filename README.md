@@ -4,6 +4,9 @@ This repository holds hand-written protocols, architecture decisions, and produc
 
 ## Find a specification
 
+- [Product brief](product/brief.md) and [parity research](product/parity.md): the goal and reference capabilities.
+- [Glossary](GLOSSARY.md): the canonical domain language for every repository.
+- [Features](features/README.md): user-visible capabilities, from idea to implementation.
 - [Protocols](protocols/README.md): wire behavior and interoperability rules.
 - [Architecture](architecture/README.md): cross-repository boundaries and decisions.
 - [Authored schemas](schemas/README.md): JSON Schemas for authored specifications, not generated API artifacts.

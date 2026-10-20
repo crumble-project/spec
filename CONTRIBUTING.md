@@ -2,23 +2,19 @@
 
 ## Ownership
 
-The Crumble project owner maintains this repository and approves changes. Authors must request review from maintainers of every affected repository. A specification cannot assign implementation work without that repository's agreement.
-
-- Protocol changes require server and affected client review.
-- Architecture changes require review from maintainers of each affected boundary.
-- Authored schemas require review from their specification owner and consumers.
-
-GitHub's review settings remain the owner's responsibility. This guide does not claim branch protection or automatic reviewer assignment is configured.
+The Crumble project owner maintains this repository and approves every change, including changes that affect other repositories.
 
 ## Write a specification
 
+Features follow the [feature lifecycle](features/README.md), from idea issue to implemented specification. Protocol and architecture documents follow these steps:
+
 1. Search existing specifications and the bot contract before adding a document.
-2. Place the document in `protocols/` or `architecture/`, and link it from that directory's index.
+2. Place the document in `features/`, `protocols/`, or `architecture/`, and link it from that directory's index.
 3. State the owner, status, affected repositories, requirements, failure cases, and compatibility policy.
 4. Link implementation issues and relevant decisions. Distinguish proposals from implemented behavior.
 5. Add authored JSON Schemas to `schemas/` only when a specification needs them.
 6. Update `CHANGELOG.md` and run the commands in [README.md](README.md#validate-changes).
-7. Open a PR explaining the change and request the required reviewers.
+7. Open a PR explaining the change.
 
 Use stable relative links inside this repository. Link to bot releases for generated API definitions rather than duplicating them. Examples must use fictional data, without credentials or deployment-specific hostnames.
 
