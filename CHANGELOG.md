@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Specify group chats (feature 0001).
 - Add the feature lifecycle, a feature specification template, and an idea issue form.
 - Make this repository's glossary canonical for every Crumble repository.
 - Move the product brief and parity research here from bot.
