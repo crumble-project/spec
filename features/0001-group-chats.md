@@ -1,6 +1,6 @@
 # 0001: Group chats
 
-- Status: Accepted
+- Status: Implemented
 - Issue: [crumble-project/spec#2](https://github.com/crumble-project/spec/issues/2)
 - Repositories: bot, apfelkern, desktop
 

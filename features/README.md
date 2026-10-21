@@ -14,4 +14,4 @@ Change an accepted specification by editing it in a pull request that says what 
 
 ## Index
 
-- [0001: Group chats](0001-group-chats.md): Accepted
+- [0001: Group chats](0001-group-chats.md): Implemented
