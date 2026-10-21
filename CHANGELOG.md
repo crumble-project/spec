@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Specify desktop jobs (feature 0002): a bot desktop in the workspace that desktop jobs operate, with the owner able to watch and take control.
+- Add the glossary terms bot desktop, desktop job, and taking control, and widen workspace to cover desktop jobs.
 - Mark group chats (feature 0001) implemented, verified by the automated tests in bot, apfelkern, and desktop. iOS and Android follow in a later specification.
 - Fix a parity research link to a Hermes Agent heading that no longer exists.
 - Specify group chats (feature 0001).

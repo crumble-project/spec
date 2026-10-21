@@ -15,3 +15,4 @@ Change an accepted specification by editing it in a pull request that says what 
 ## Index
 
 - [0001: Group chats](0001-group-chats.md): Implemented
+- [0002: Desktop jobs](0002-desktop-jobs.md): Accepted

@@ -47,5 +47,17 @@ Background work a bot hands to a separate agent that edits files and runs comman
 _Avoid_: Subagent, session, sub-chat
 
 **Workspace**:
-A bot's persistent files for coding jobs, on a disk only that bot's jobs can reach. The machine running them starts and stops as needed.
+A bot's persistent files for coding jobs and desktop jobs, on a disk only that bot's jobs can reach. The machine running them starts and stops as needed.
 _Avoid_: Sandbox, container, VM (in product language)
+
+**Bot desktop**:
+A bot's own graphical desktop, with a browser and apps, inside its workspace. Not the Crumble desktop client.
+_Avoid_: Den, bot screen, virtual desktop, computer
+
+**Desktop job**:
+Background work a bot hands to a separate agent that operates the bot desktop's windows with mouse and keyboard. The job's answer returns to the bot's chat.
+_Avoid_: Den job, computer use session, browser agent
+
+**Taking control**:
+The owner operating the bot desktop directly, which pauses desktop work until the owner hands control back.
+_Avoid_: Takeover, remote control, screen sharing
