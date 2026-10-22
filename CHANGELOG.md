@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Accept chat history search (feature 0003): bots search the transcript's messages and read surrounding context within their permitted chats, using one search cutoff. Indexing is deferred.
+
 - Specify desktop jobs (feature 0002): a bot desktop in the workspace that desktop jobs operate, with the owner able to watch and take control.
 - Add the glossary terms bot desktop, desktop job, and taking control, and widen workspace to cover desktop jobs.
 - Mark group chats (feature 0001) implemented, verified by the automated tests in bot, apfelkern, and desktop. iOS and Android follow in a later specification.
