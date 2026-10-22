@@ -17,3 +17,4 @@ Change an accepted specification by editing it in a pull request that says what 
 - [0001: Group chats](0001-group-chats.md): Implemented
 - [0002: Desktop jobs](0002-desktop-jobs.md): Accepted
 - [0003: Chat history search](0003-chat-history-search.md): Accepted
+- [0004: Provider account login](0004-provider-account-login.md): Draft

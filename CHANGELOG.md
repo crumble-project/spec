@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Draft provider account login (feature 0004): expose Pi AI authentication flows, persist typed credentials, and support remote-server login across clients.
+
 - Accept chat history search (feature 0003): bots search the transcript's messages and read surrounding context within their permitted chats, using one search cutoff. Indexing is deferred.
 
 - Specify desktop jobs (feature 0002): a bot desktop in the workspace that desktop jobs operate, with the owner able to watch and take control.
