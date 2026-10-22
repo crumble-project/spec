@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Draft provider account login (feature 0004): expose Pi AI authentication flows, persist typed credentials, and support remote-server login across clients.
+- Accept provider account login (feature 0004): expose Pi AI authentication flows, persist typed credentials, and support remote-server login across clients. Record approved login-session limits and verified library paths, including remote-browser limitations.
 
 - Accept chat history search (feature 0003): bots search the transcript's messages and read surrounding context within their permitted chats, using one search cutoff. Indexing is deferred.
 

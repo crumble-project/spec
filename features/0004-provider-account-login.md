@@ -1,6 +1,6 @@
 # 0004: Provider account login
 
-- Status: Draft
+- Status: Accepted
 - Issue: [crumble-project/spec#7](https://github.com/crumble-project/spec/issues/7)
 - Repositories: bot, apple (apfelkern, macOS, iOS), android
 
@@ -47,11 +47,17 @@ Login must work when the server and browser are on different machines. A callbac
 
 Use the device flow or manual callback/code interaction supplied by Pi AI where applicable. If the provider requires manual callback input, explain what the owner must copy. Do not require access to the container shell or its credential files.
 
+The installed Pi AI version supports Codex device-code login and OpenAI sign-in with a manually pasted callback URL. OpenAI's manual path still requires its internal callback port to be available; it does not require publishing that port from Docker. Report callback-port conflicts explicitly without disturbing another login.
+
+Radius device-code login works with a remote browser. Its browser-only callback path has no manual fallback in the installed library. Direct remote owners to device-code login and explain that limitation before they begin the browser path.
+
 If the installed library cannot complete a provider flow with a remote browser, report that limitation explicitly. Do not offer it as a working remote login method. OpenAI account login must have a verified remote-server path before this feature is accepted as implemented.
 
 A temporary client disconnect does not discard the pending server session. The client can retrieve its current state and outstanding prompt after reconnecting. Session responses must not expose previously submitted secrets.
 
-Login sessions are temporary and expire after bounded inactivity and an absolute lifetime. Expiration cancels provider work. A server restart invalidates pending sessions explicitly; the owner starts again. Previously saved credentials remain available.
+Unfinished login sessions expire after 10 minutes without owner interaction or 30 minutes after starting, whichever comes first. Shorter provider deadlines still apply. Background polling and provider progress do not extend these limits. Expiration cancels provider work; the owner starts a new sign-in attempt. These limits do not sign out a successfully authenticated account.
+
+A server restart invalidates pending sessions explicitly; the owner starts again. Previously saved credentials remain available.
 
 ### Credentials and refresh
 
@@ -120,8 +126,12 @@ Implement in contract order: bot and its contract release, Apple shared code and
 - Keep login sessions temporary. Saved credentials survive restart; unfinished authorization does not.
 - Preserve existing credentials until replacement succeeds. Opening a login screen must not interrupt working bots.
 
+## Verification basis
+
+The installed Pi AI 1.3.0 login implementations were inspected for all nine OAuth providers. Offline probes exercised OpenAI manual callback login, Codex device-code login, Codex manual callback login, and cancellation using fake provider responses. All four passed.
+
+This establishes the library paths needed for implementation, not live account authorization. End-to-end macOS-to-Docker sign-in with the owner's account remains an implementation acceptance check. Device-code login can depend on account or workspace permissions.
+
 ## Open questions
 
-- Confirm the proposed client scope: macOS first, with iOS and Android required before marking the feature implemented.
-- Verify the remote-browser interaction paths of the installed Pi AI providers, especially OpenAI, before accepting the specification. Any library limitation must be resolved or reflected in the supported methods.
-- Choose inactivity and absolute session-lifetime bounds during specification review.
+None.
