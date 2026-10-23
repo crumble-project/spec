@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Align specifications with the merged `apple` repository (`apfelkern`, `macos`, `ios`) and `bot` through Contract 1.9.0; mark desktop jobs (feature 0002) and chat history search (feature 0003) implemented, and condense product and feature documentation with architecture diagrams.
+
 - Fold the skills repository into bot: the default skills ship in bot's `skills/` directory, and the feature template and specification 0005 no longer list a skills repository.
 
 - Accept learned skills (feature 0005): selectable review model, Hermes Agent defaults for review thresholds, input cap, and stale and archive periods.
