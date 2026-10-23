@@ -2,7 +2,7 @@
 
 - Status: Draft | Accepted | Implemented
 - Issue: link
-- Repositories: bot, apfelkern, desktop, ios, android
+- Repositories: bot, apple (apfelkern, macOS, iOS), android
 
 ## Problem
 
