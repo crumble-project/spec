@@ -27,3 +27,4 @@ Record cross-repository technical decisions in [architecture](../architecture/RE
 - [0003: Chat history search](0003-chat-history-search.md): Implemented
 - [0004: Provider account login](0004-provider-account-login.md): Accepted
 - [0005: Learned skills](0005-learned-skills.md): Accepted
+- [0006: Claude Code provider](0006-claude-code-provider.md): Accepted
