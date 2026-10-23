@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Fold the skills repository into bot: the default skills ship in bot's `skills/` directory, and the feature template and specification 0005 no longer list a skills repository.
+
 - Accept learned skills (feature 0005): selectable review model, Hermes Agent defaults for review thresholds, input cap, and stale and archive periods.
 
 - Draft learned skills (feature 0005): skills become on-demand packages that bots maintain themselves, a background review after tool-heavy work updates them, and every learned change is recorded and reversible by the owner. Modeled on Hermes Agent.

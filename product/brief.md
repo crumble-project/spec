@@ -3,7 +3,7 @@
 The original goal for Crumble. Later decisions supersede parts of it:
 
 - Each bot has one continuous chat instead of multiple sessions. See the [glossary](../GLOSSARY.md).
-- The project now spans more repositories than the two listed under "Project structure": bot, apfelkern, desktop, ios, android, skills, and spec.
+- The project now spans more repositories than the two listed under "Project structure": bot, apfelkern, desktop, ios, android, and spec. The default skills live in bot.
 
 Record further changes as [feature specifications](../features/README.md), not edits to this brief.
 

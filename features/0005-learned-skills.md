@@ -2,7 +2,7 @@
 
 - Status: Accepted
 - Issue: [crumble-project/spec#8](https://github.com/crumble-project/spec/issues/8)
-- Repositories: bot, apfelkern, desktop, ios, android, skills
+- Repositories: bot, apfelkern, desktop, ios, android
 
 ## Problem
 
@@ -16,7 +16,7 @@ Skills become the bot's procedural memory: how to do a class of task for this ow
 
 ### Skills are packages loaded on demand
 
-A skill is a package: a main document with a name, a one-line description, and instructions, plus optional reference documents for depth that is only needed sometimes. Skills keep their three homes: defaults from the skills repository, the shared library, and a bot's own skills.
+A skill is a package: a main document with a name, a one-line description, and instructions, plus optional reference documents for depth that is only needed sometimes. Skills keep their three homes: the defaults bundled with the server, the shared library, and a bot's own skills.
 
 A bot's working context lists the skills available to it by name and description. The bot loads a skill's instructions when the task calls for it, and loads a reference document only when it needs that depth. Loading a skill counts as using it.
 
@@ -28,7 +28,7 @@ A bot has a skill-management tool. It can create a skill, patch a passage of an 
 
 The bot's instructions route knowledge. A procedure, a pitfall, or an owner's correction for a kind of work goes into the skill that governs that work. Memory is only for facts that apply in every conversation: who the owner is, standing conventions with no task home.
 
-Defaults from the skills repository are read-only for bots and owners alike, as today. A bot writes to its own skills. It can read shared skills but cannot change them; a shared skill the bot wants to improve is patched as the bot's own copy, and the owner decides whether the shared one follows. In a group chat, a bot's skill writes go to its own skills only, matching the memory rule.
+The bundled defaults are read-only for bots and owners alike, as today. A bot writes to its own skills. It can read shared skills but cannot change them; a shared skill the bot wants to improve is patched as the bot's own copy, and the owner decides whether the shared one follows. In a group chat, a bot's skill writes go to its own skills only, matching the memory rule.
 
 ### A review after work
 
@@ -94,7 +94,7 @@ Additions must stay compatible within contract major version 1. Whether a skill'
 
 - Desktop: skill packages with reference documents in the bot and shared skill editors; a change record view per bot with revert; the learned notice in the bot chat; stale and archived state with restore and pin.
 - iOS and Android: the learned notice in the bot chat and revert from the change record. Editing reference documents may follow later.
-- Skills repository: default skills may gain reference documents in the same directory layout.
+- Bundled defaults in bot's `skills/` directory may gain reference documents in the same directory layout.
 
 ## Decisions
 
