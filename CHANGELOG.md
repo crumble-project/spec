@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Accept the Claude Code provider (feature 0006): bots run on the owner's Claude subscription through the official `claude` CLI on the server, with Crumble keeping tools, compaction, and the agent loop. Modeled on Hermes' claude-subscription-directsdk plugin.
+
 - Align specifications with the merged `apple` repository (`apfelkern`, `macos`, `ios`) and `bot` through Contract 1.9.0; mark desktop jobs (feature 0002) and chat history search (feature 0003) implemented, and condense product and feature documentation with architecture diagrams.
 
 - Fold the skills repository into bot: the default skills ship in bot's `skills/` directory, and the feature template and specification 0005 no longer list a skills repository.
