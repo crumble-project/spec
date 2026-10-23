@@ -18,4 +18,4 @@ Change an accepted specification by editing it in a pull request that says what 
 - [0002: Desktop jobs](0002-desktop-jobs.md): Accepted
 - [0003: Chat history search](0003-chat-history-search.md): Accepted
 - [0004: Provider account login](0004-provider-account-login.md): Accepted
-- [0005: Learned skills](0005-learned-skills.md): Draft
+- [0005: Learned skills](0005-learned-skills.md): Accepted

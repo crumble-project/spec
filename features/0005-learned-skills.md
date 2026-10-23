@@ -1,6 +1,6 @@
 # 0005: Learned skills
 
-- Status: Draft
+- Status: Accepted
 - Issue: [crumble-project/spec#8](https://github.com/crumble-project/spec/issues/8)
 - Repositories: bot, apfelkern, desktop, ios, android, skills
 
