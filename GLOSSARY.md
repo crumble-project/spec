@@ -42,6 +42,14 @@ _Avoid_: Fork, branch, session
 Available to every bot that opts in, as opposed to belonging to one bot. Memory, skills, and MCP servers are either shared or a bot's own.
 _Avoid_: Global, public
 
+**Skill**:
+A package of instructions for a class of task: a main document with a name and description, plus optional reference documents loaded only when needed. A skill is a default, shared, or a bot's own.
+_Avoid_: Prompt snippet, plugin
+
+**Learned change**:
+A change a bot or its review made to its own skills or memory, recorded with its source and reversible by the owner.
+_Avoid_: Auto-save, self-update
+
 **Coding job**:
 Background work a bot hands to a separate agent that edits files and runs commands in the bot's workspace. The job's answer returns to the bot's chat.
 _Avoid_: Subagent, session, sub-chat
