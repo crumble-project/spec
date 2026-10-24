@@ -58,6 +58,10 @@ _Avoid_: Subagent, session, sub-chat
 A bot's persistent files for coding jobs and desktop jobs, on a disk only that bot's jobs can reach. The machine running them starts and stops as needed.
 _Avoid_: Sandbox, container, VM (in product language)
 
+**Credential**:
+A secret value the owner gives one bot for a list of hosts. The bot's jobs use it through a placeholder, so the value never enters the workspace.
+_Avoid_: Secret, API key, environment variable (in product language)
+
 **Bot desktop**:
 A bot's own graphical desktop, with a browser and apps, inside its workspace. Not the Crumble desktop client.
 _Avoid_: Den, bot screen, virtual desktop, computer
