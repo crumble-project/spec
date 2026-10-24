@@ -42,7 +42,7 @@ sequenceDiagram
 - **The proxy swaps it on granted hosts only.** The credential proxy runs on the server, one per running workspace. For a host on one of the bot's credentials it terminates TLS with the bot's CA, replaces that credential's placeholder in request headers (including inside HTTP Basic authorization) and in the query string, and forwards the request over verified TLS. Traffic to every other host is tunneled through untouched and uninspected, so the proxy is not a network policy and adds no approvals.
 - **A placeholder is worthless anywhere else.** The proxy accepts placeholders only on connections from the bot's own workspace. A placeholder sent to another host, sent from another bot's workspace, copied from a transcript, or sent around the proxy reaches its destination as the placeholder.
 - **Responses are scrubbed.** The proxy replaces the real value with the placeholder in response headers and in text bodies, so an API that echoes the request cannot hand the value back.
-- **Every swap is recorded:** time, coding job, method, host, path, and response status. The owner sees the latest use on each credential and the list per credential. Records are kept for 90 days and never contain the value.
+- **Every swap is recorded:** time, method, host, path, and response status. Records do not name the coding job: jobs share one workspace, so a connection cannot be traced to one. The owner sees the latest use on each credential and the list per credential. Records are kept for 90 days and never contain the value.
 - **Scheduled tasks** need nothing extra: they run as the bot, and so do their coding jobs.
 
 ### Managing credentials
